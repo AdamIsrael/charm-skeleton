@@ -1,0 +1,7 @@
+name: skeleton
+summary: A skeleton of an operator framework charm
+description: |
+    Describe your charm here
+series:
+- xenial
+- bionic
