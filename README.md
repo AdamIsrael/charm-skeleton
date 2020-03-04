@@ -19,6 +19,7 @@ cd mycharm
 git init
 
 # Install the submodules
+git submodule add https://github.com/canonical/operator mod/operator
 git submodule update --init
 
 # Edit metadata.yaml: set the name and describe your charm
@@ -26,6 +27,7 @@ vim metadata.yaml
 [...]
 
 # Commit your changes
+git add .
 git commit -a
 ```
 
