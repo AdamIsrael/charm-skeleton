@@ -4,22 +4,36 @@ This is the skeleton of an [operator framework](https://github.com/canonical/ope
 
 ## Usage
 
-To get the charm:
+To create a charm based on this skeleton:
 
 ```bash
-git clone https://github.com/AdamIsrael/charm-skeleton
-cd charm-skeleton
+# Download the skeleton from github
+wget https://github.com/AdamIsrael/charm-skeleton/archive/master.zip
+
+# Unpack the archive
+unzip master.zip
+mv charm-skeleton-master mycharm
+cd mycharm
+
+# Initialize the git repo
+git init
 
 # Install the submodules
 git submodule update --init
+
+# Edit metadata.yaml: set the name and describe your charm
+vim metadata.yaml
+[...]
+
+# Commit your changes
+git commit -a
 ```
 
-To deploy to juju:
-```
+To deploy charm to juju:
+
+```bash
 juju deploy .
-```
 
-```
 # Make sure the charm is in an Active state
 juju status
 ```
