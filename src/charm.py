@@ -14,8 +14,6 @@ from ops.model import (
     WaitingStatus,
     ModelError,
 )
-import os
-import subprocess
 
 
 class SkeletonCharm(CharmBase):
