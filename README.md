@@ -8,7 +8,7 @@ To create a charm based on this skeleton:
 
 ```bash
 # Download the skeleton from github
-wget https://github.com/AdamIsrael/charm-skeleton/archive/master.zip
+wget https://github.com/charmed-osm/charm-skeleton/archive/master.zip
 
 # Unpack the archive
 unzip master.zip
